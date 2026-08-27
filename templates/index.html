@@ -1,69 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>CodePrep AI</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
 
+    <!-- Navigation -->
     <nav>
-        <div class="logo">CodePrep AI</div>
+
+        <div class="logo">
+            CodePrep AI
+        </div>
 
         <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Practice</a>
+            <a href="/">Home</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
             <a href="#">Login</a>
         </div>
+
     </nav>
 
 
-    <main>
+    <!-- Hero Section -->
+    <section class="hero">
 
-        <section class="hero">
+        <div class="hero-content">
 
-            <h1>Master Coding Interviews with AI</h1>
+            <h1>
+                Master Coding Interviews with AI
+            </h1>
 
             <p>
-                Practice coding problems, test your solutions,
-                and get AI-powered feedback to improve your skills.
+                Practice coding problems, improve your solutions,
+                and prepare for technical interviews with AI-powered guidance.
             </p>
 
-            <button>Start Practicing</button>
+            <a href="#features" class="start-button">
+                Start Practicing
+            </a>
 
-        </section>
+        </div>
+
+    </section>
 
 
-        <section class="features">
+    <!-- Features -->
+    <section class="features" id="features">
 
-            <div class="card">
-                <h2>💻 Coding Practice</h2>
-                <p>
-                    Solve coding problems designed for interview preparation.
-                </p>
-            </div>
+        <h2>
+            Everything You Need to Prepare
+        </h2>
 
-            <div class="card">
-                <h2>🤖 AI Feedback</h2>
-                <p>
-                    Get useful feedback about your code and improve your solutions.
-                </p>
-            </div>
+        <div class="feature-container">
 
             <div class="card">
-                <h2>📊 Track Progress</h2>
+
+                <div class="icon">
+                    💻
+                </div>
+
+                <h3>
+                    Coding Practice
+                </h3>
+
                 <p>
-                    Track your solved problems and monitor your improvement.
+                    Solve coding problems designed to improve
+                    your programming and interview skills.
                 </p>
+
             </div>
 
-        </section>
 
-    </main>
+            <div class="card">
+
+                <div class="icon">
+                    🤖
+                </div>
+
+                <h3>
+                    AI Feedback
+                </h3>
+
+                <p>
+                    Get helpful AI-powered feedback on your
+                    coding solutions and improve your approach.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="icon">
+                    📊
+                </div>
+
+                <h3>
+                    Track Progress
+                </h3>
+
+                <p>
+                    Monitor your solved problems and see how
+                    your interview preparation is improving.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <h2>
+            About CodePrep AI
+        </h2>
+
+        <p>
+            CodePrep AI is a simple platform designed to help
+            students prepare for coding interviews through
+            practice, feedback, and progress tracking.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 CodePrep AI | Team Project
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
