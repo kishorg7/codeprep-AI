@@ -6,6 +6,10 @@ app = Flask(__name__)
 def ai():
     return render_template("ai.html")
 
+@app.route("/progress")
+def progress():
+    return render_template("progress.html")
+
 @app.route("/practice")
 def practice():
     return render_template("practice.html")
