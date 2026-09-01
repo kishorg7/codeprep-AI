@@ -2,6 +2,10 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+@app.route("/ai")
+def ai():
+    return render_template("ai.html")
+
 @app.route("/practice")
 def practice():
     return render_template("practice.html")
